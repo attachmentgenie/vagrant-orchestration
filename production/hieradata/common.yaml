@@ -1,3 +1,5 @@
 ---
+classes:
+ - roles::orchestration
 profiles::firewall::ensure: stopped
 stacks::bootstrap::firewall: true
