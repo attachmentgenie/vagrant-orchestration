@@ -1,8 +1,8 @@
 ---
-profiles::nginx::vhosts:
+profiles::orchestration::rundeck: true
+profiles::orchestration::rundeck::manage_repo: true
+profiles::runtime::java: true
+profiles::website::nginx: true
+profiles::website::nginx::vhosts:
   rundeck.orchestration.vagrant:
     proxy: 'http://127.0.0.1:4440'
-profiles::rundeck::manage_repo: true
-stacks::orchestration::rundeck: true
-stacks::runtime::java: true
-stacks::website::nginx: true
