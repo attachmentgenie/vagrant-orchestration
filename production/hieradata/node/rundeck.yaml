@@ -1,6 +1,7 @@
 ---
 profiles::orchestration::rundeck: true
 profiles::orchestration::rundeck::manage_repo: true
+profiles::orchestration::rundeck::puppetdb: true
 profiles::runtime::java: true
 profiles::website::nginx: true
 profiles::website::nginx::vhosts:

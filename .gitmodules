@@ -25,3 +25,6 @@
 [submodule "production/modules/concat"]
 	path = production/modules/concat
 	url = https://github.com/puppetlabs/puppetlabs-concat.git
+[submodule "production/modules/wget"]
+	path = production/modules/wget
+	url = https://github.com/maestrodev/puppet-wget.git
