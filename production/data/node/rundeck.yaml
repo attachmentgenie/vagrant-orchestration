@@ -1,9 +1,11 @@
 ---
 profiles::orchestration::rundeck: true
+profiles::orchestration::rundeck::grails_server_url: 'http://rundeck.orchestration.vagrant'
 profiles::orchestration::rundeck::manage_repo: true
 profiles::orchestration::rundeck::puppetdb: true
 profiles::runtime::java: true
 profiles::website::nginx: true
-profiles::website::nginx::vhosts:
+profiles::website::nginx::proxies:
   rundeck.orchestration.vagrant:
-    proxy: 'http://127.0.0.1:4440'
+    client_max_body_size: 20M
+    proxy_url: 'http://127.0.0.1:4440'
